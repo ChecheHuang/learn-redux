@@ -1,0 +1,13 @@
+$main : #FED801;
+
+@import "mixin.scss";
+
+.App {
+    @include dFlexCenter();
+
+    @include circle(200px, skyblue);
+
+    @include ipad() {
+        @include circle(100px,$main)
+    }
+}
